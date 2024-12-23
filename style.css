@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300&family=Poppins&family=Roboto&display=swap');
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(206, 246, 246);
+}
+
+p {
+    margin-bottom: 0px !important;
+}
+
+/* .im {
+    border: 3px solid #848484;
+    height: 100%;
+    width: 100%;
+} */
+
+.hover-it {
+    transition: 0.5s;
+}
+
+.hover-it:hover {
+    transform: translate(0, -10px);
+}
+
+.im img {
+    height: 200px;
+    width: 200px;
+    border: 3px solid #009dc4;
+    border-radius: 0.3rem;
+}
+
+input {
+    box-shadow: none !important;
+    border-color: #dee2e6 !important;
+}
+
+.im {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    width: 220px;
+    height: 220px;
+}
+
+
+
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 68vh;
+}
+
+.productbg {
+    background-image: url("img/product.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+.productimg {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 55vh;
+    width: 100%;
+}
+
+/* .naku {
+    background-image: url("img/agroo.png");
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-size: cover;
+} */
+
+.navtext {
+    font-size: 12px;
+}
+
+.main-sec {
+    text-align: center;
+    color: white;
+}
+
+
+.farm-color {
+    color: #009dc4;
+}
+
+
+.blog {
+    position: relative;
+    cursor: pointer;
+}
+
+.blog:hover {
+    color: white;
+}
+
+.blog::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.blog:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.anime {
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ptitle {
+    color: #009dc4;
+}
+
+.anime:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.table>:not(caption)>*>* {
+    padding: 0.3rem !important;
+}
+
+.p-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.p-text:hover {
+    color: #009dc4;
+    cursor: pointer;
+}
+
+.btn-outline-light {
+    --bs-btn-hover-bg: none !important;
+    --bs-btn-active-bg: none !important;
+}
+
+.sigma_post .sigma_post-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.sigma_post .sigma_post-thumb a:first-child {
+    display: block;
+}
+
+.sigma_post .sigma_post-thumb img {
+    transition: 0.3s;
+    width: 100%;
+}
+
+.sigma_post .sigma_post-thumb:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+    .headline {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .welcome {
+        font-size: 1.2rem;
+    }
+
+    .line {
+        width: 22%;
+    }
+
+    .productinquries {
+        width: auto !important;
+    }
+
+    .Arrival {
+        display: flex;
+        flex-direction: column;
+        align-items: start !important;
+        flex: 0 0 auto !important;
+        width: auto !important;
+        text-align: left !important;
+    }
+
+    .Arrival1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .box {
+        display: none !important;
+    }
+}
